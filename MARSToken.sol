@@ -720,7 +720,7 @@ contract BEP20 is Context, IBEP20, Ownable {
 pragma solidity >=0.6.0 <0.8.0;
 
 // MARSToken with Governance.
-contract MARSToken is BEP20('MARS - Climb Token Finance', 'MARS'), MinterRole {
+contract MARSToken is BEP20('Mars - Climb Token Finance', 'MARS'), MinterRole {
     constructor() public {
         _mint(address(this), 150000*1e18);
         _mint(msg.sender, 150000*1e18);
